@@ -1,0 +1,15 @@
+bison.tab.cpp
+bison.tab.hpp
+*.o
+parser.output
+dump_json_ast
+*.dSYM
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Makefile
+cmake_install.cmake
+*.a
+*.dylib
+*.so
+GraphQLParser.py

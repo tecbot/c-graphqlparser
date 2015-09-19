@@ -1,0 +1,45 @@
+diff --git 1/internal/c/GraphQLAst.cpp 2/internal/c/GraphQLAst.cpp
+index 3996c9a..cf39d4b 100644
+--- 1/internal/c/GraphQLAst.cpp
++++ 2/internal/c/GraphQLAst.cpp
+@@ -8,8 +8,8 @@
+  */
+ /** @generated */
+
+-#include "GraphQLAst.h"
+-#include "../Ast.h"
++#include "c/GraphQLAst.h"
++#include "Ast.h"
+
+ using namespace facebook::graphql::ast;
+
+diff --git a/internal/c/GraphQLAstNode.cpp b/internal/c/GraphQLAstNode.cpp
+index a7947b3..9eb2f17 100644
+--- a/internal/c/GraphQLAstNode.cpp
++++ b/internal/c/GraphQLAstNode.cpp
+@@ -7,8 +7,8 @@
+  *  of patent rights can be found in the PATENTS file in the same directory.
+  */
+
+-#include "GraphQLAstNode.h"
+-#include "../AstNode.h"
++#include "c/GraphQLAstNode.h"
++#include "AstNode.h"
+
+ using facebook::graphql::ast::Node;
+
+diff --git a/internal/c/GraphQLParser.cpp b/internal/c/GraphQLParser.cpp
+index 871a5f9..5f8aa5a 100644
+--- a/internal/c/GraphQLParser.cpp
++++ b/internal/c/GraphQLParser.cpp
+@@ -7,9 +7,9 @@
+  * of patent rights can be found in the PATENTS file in the same directory.
+  */
+
++#include "c/GraphQLParser.h"
+ #include "GraphQLParser.h"
+-#include "../GraphQLParser.h"
+-#include "../AstNode.h"
++#include "AstNode.h"
+
+ #include <cstdlib>
