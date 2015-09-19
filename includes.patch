@@ -43,3 +43,24 @@ index 871a5f9..5f8aa5a 100644
 +#include "AstNode.h"
 
  #include <cstdlib>
+
+diff --git 1/internal/c/GraphQLAstToJSON.cpp 2/internal/c/GraphQLAstToJSON.cpp
+index ec42ae5..fe1984e 100644
+--- 1/internal/c/GraphQLAstToJSON.cpp
++++ 2/internal/c/GraphQLAstToJSON.cpp
+@@ -7,12 +7,12 @@
+  * of patent rights can be found in the PATENTS file in the same directory.
+  */
+
+-#include "GraphQLAstToJSON.h"
++#include "c/GraphQLAstToJSON.h"
+
+ #include <string.h>
+
+-#include "../JsonVisitor.h"
+-#include "../AstNode.h"
++#include "JsonVisitor.h"
++#include "AstNode.h"
+
+
+ const char *graphql_ast_to_json(const struct GraphQLAstNode *node)
