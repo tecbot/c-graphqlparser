@@ -81,6 +81,7 @@ using facebook::graphql::ast::NonNullType;
 
 union yystype {                                         \
     const char *str;                                    \
+    const char *heapStr;                                \                               
     Name *name;                                         \
     Definition *definition;                             \
     Document *document;                                 \
@@ -140,7 +141,7 @@ union yystype {                                         \
 #define YYSTYPE union yystype
 #define YYLTYPE yy::location
 
-#line 144 "parser.tab.hpp" // lalr1.cc:392
+#line 145 "parser.tab.hpp" // lalr1.cc:392
 
 
 # include <cstdlib> // std::abort
@@ -212,7 +213,7 @@ union yystype {                                         \
 
 
 namespace yy {
-#line 216 "parser.tab.hpp" // lalr1.cc:392
+#line 217 "parser.tab.hpp" // lalr1.cc:392
 
 
 
@@ -445,7 +446,7 @@ namespace yy {
   static const unsigned char yydefact_[];
 
   // YYPGOTO[NTERM-NUM].
-  static const short int yypgoto_[];
+  static const signed char yypgoto_[];
 
   // YYDEFGOTO[NTERM-NUM].
   static const short int yydefgoto_[];
@@ -575,8 +576,8 @@ namespace yy {
     enum
     {
       yyeof_ = 0,
-      yylast_ = 365,     ///< Last index in yytable_.
-      yynnts_ = 53,  ///< Number of nonterminal symbols.
+      yylast_ = 362,     ///< Last index in yytable_.
+      yynnts_ = 54,  ///< Number of nonterminal symbols.
       yyfinal_ = 30, ///< Termination state number.
       yyterror_ = 1,
       yyerrcode_ = 256,
@@ -593,7 +594,7 @@ namespace yy {
 
 
 } // yy
-#line 597 "parser.tab.hpp" // lalr1.cc:392
+#line 598 "parser.tab.hpp" // lalr1.cc:392
 
 
 
